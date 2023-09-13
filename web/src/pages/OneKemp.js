@@ -1,6 +1,10 @@
+import { useParams } from "react-router-dom"
+
 const OneKemp = () => {
+  const { movieId } = useParams()
+
   return (
-    <div>OneKemp</div>
+    <div>{ movieId }</div>
   )
 }
 

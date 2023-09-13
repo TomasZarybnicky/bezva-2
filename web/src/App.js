@@ -11,9 +11,8 @@ const App = () => {
       <Route path="/" element={ <SharedLayout /> } >
         <Route index element={ <Home /> } />
         <Route path="all-kempy" element={ <AllKempy /> } />
-        <Route path="one-kemp" element={ <OneKemp /> } />
+        <Route path="one-kemp/:movieId" element={ <OneKemp /> } />
       </Route>
-
 
     </Routes> 
   </BrowserRouter>
