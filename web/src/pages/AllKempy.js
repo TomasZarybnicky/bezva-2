@@ -1,6 +1,7 @@
 import { projectFirestore } from "../firebase/config"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import "./AllKempy.css"
 
 const AllKempy = () => {
   const [data, setData] = useState([])
@@ -29,7 +30,7 @@ const AllKempy = () => {
       {data.map( (oneKemp) => {
         const {id, title} = oneKemp
 
-        return <div key={id} >
+        return <div key={id} className="one-kemp">
           <p>{title}</p>
           <Link to={`/one-kemp/${id}`}>Více informací</Link>
         </div>

@@ -1,7 +1,9 @@
+import "./Home.css"
+
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
+  return <section>
+    <h1>Úvodní strana</h1>
+  </section>
 }
 
 export default Home

@@ -1,9 +1,9 @@
 import "./Footer.css"
 
 const Footer = () => {
-  return ( <div>
-      <p>Footer</p>  
-    </div>
+  return ( <footer>
+    <p>Patička</p>
+  </footer> 
   )
 }
 
