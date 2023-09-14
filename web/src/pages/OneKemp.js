@@ -1,4 +1,5 @@
-import { useParams } from "react-router-dom"
+import "./OneKemp.css"
+import { useParams, Link} from "react-router-dom"
 import { projectFirestore } from "../firebase/config"
 import { useState, useEffect } from "react"
 
@@ -21,11 +22,12 @@ const OneKemp = () => {
     })
   }, [movieId])
 
-  return ( <section>
+  return ( <section className="one-movie-section">
     {error && <p>{error}</p>}
     <h1>{data.title}</h1>
     <p>{data.maxPeople}</p>
     <p>{data.minPeople}</p>
+    <Link exact to="/all-kempy">Zpět na seznam filmů</Link>
   </section>
   )
 }

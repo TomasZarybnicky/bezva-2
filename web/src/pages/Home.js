@@ -1,7 +1,7 @@
 import "./Home.css"
 
 const Home = () => {
-  return <section>
+  return <section className="home">
     <h1>Úvodní strana</h1>
   </section>
 }

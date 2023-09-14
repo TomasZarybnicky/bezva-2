@@ -33,9 +33,11 @@ const Form = () => {
   }
 
 
-  return <section>
+  return <section className="form-section">
+    <h1>Přidání kempů</h1>
     <form onSubmit={submitForm} >
       <input
+        className="input"
         type="text"
         placeholder="Název kempu"
         onChange={ (e) => setKempTitle(e.target.value) }
@@ -44,6 +46,7 @@ const Form = () => {
 
 
       <input
+        className="input"
         type="number"
         placeholder="Minimální počet osob"
         min="1"
@@ -53,6 +56,7 @@ const Form = () => {
 
 
       <input
+        className="input"
         type="number"
         placeholder="Maximální počet osob"
         min="1"
