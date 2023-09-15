@@ -1,9 +1,9 @@
-import "./Home.css"
-
 const Home = () => {
-  return <section className="home">
-    <h1>Úvodní strana</h1>
-  </section>
+  return (
+    <section className="h-[50vh] flex flex-col items-center justify-center">
+      <h1>Úvodní strana</h1>
+    </section>
+  );
 }
 
-export default Home
+export default Home;
